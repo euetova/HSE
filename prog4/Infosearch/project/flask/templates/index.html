@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Главная страница</title>
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link href="static/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h2 align="center"> Страница поиска новостей газеты <a href="http://susnov.ru" target="_blank">"Сусанинская новь"<a></h2><br>
+			<div id="query" align="center">
+				<form><input type="text" name="query" placeholder="Ваш запрос"></input>
+					<button type="submit">Найти</button>
+				</form>
+			</div>
+			{% if links %}
+			<div id="results">
+				<br><h4> Первые 10 статей по релевантности </h4>
+				<ol>
+				{% for link in links %}
+				<li><a href="{{ link[0][0] }}" target="_blank">{{ link[0][1] }}<a></li>
+				{% endfor %}
+				</ol>
+			</div>
+			{% endif %}
+		</div>
+	</body>
+</html>

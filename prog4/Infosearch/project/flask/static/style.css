@@ -1,0 +1,11 @@
+div.container {
+	padding-top: 40px;
+    width: 70%;
+	background-color: #fff;
+}
+
+li {
+    margin: 10px 0;
+	font-family: Calibri;
+	font-size: 18px;
+}

@@ -1,0 +1,139 @@
+---
+title: "hw_3"
+author: "Ekaterina Uetova"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = FALSE)
+Sys.setlocale(locale = "Russian")
+```
+
+```{r}
+library(tidyverse)
+library(bootstrap)
+library(mosaic)
+```
+### 1.1
+Посчитайте среднее употребление слова “сэр” по каждой главе, а потом посчитайте grand mean. Ответ выведите в формате тиббл.
+
+```{r}
+df <- read_csv("https://raw.githubusercontent.com/euetova/2018_data_analysis_for_linguists/master/hw4_binomial_ci/hw4_wodehouse.csv")
+
+df <- as_tibble(df)
+```
+```{r}
+df %>% 
+  filter(word == "сэр") %>% 
+  select(chapter) %>% 
+  count(chapter) -> chapter_sir
+
+df %>% 
+  group_by(chapter) %>% 
+  count(chapter) -> all_words
+
+chapter_sir['all_words'] <- all_words$n
+
+chapter_sir %>%
+  mutate(average = n/all_words) %>% 
+  arrange(desc(average)) -> chapter_sir
+
+as_tibble(chapter_sir)
+
+as_tibble(mean(chapter_sir$average))
+```
+
+
+### 1.2
+Посчитайте бутстрэпом доверительный интервал для средней доли слова “сэр” в главах романа и выведите его размер в формате тиббл.
+
+```{r}
+set.seed(42)
+
+sir_bs <- bootstrap(chapter_sir$average, nboot = 10000, theta = mean)$thetastar
+sir_bs <- data_frame(means = sir_bs) 
+
+sir_bs %>%
+  summarise(mean = mean(means),
+            q1 = quantile(means, 0.025),
+            q2 = quantile(means, 0.975))->
+  sir_stats
+
+as_tibble(sir_stats)
+
+sir_bs %>% 
+  ggplot(aes(means)) +
+  geom_histogram(fill = "lightblue")+
+  theme_bw()+
+  labs(title = 'Средняя доля слова "сэр" на основе романа “Фамильная честь Вустеров”', subtitle = "Среднее и 95% бутстрэпнутый доверительный интервал")+
+  geom_vline(xintercept = unlist(sir_stats), lty = c(2, 3, 3))
+```
+
+### 1.3
+Посчитайте биномиальный доверительный интервал употребления слова “сэр” в каждой главе и выведите главу с максимальным из интервалов в формате тиббл.
+
+```{r}
+chapter_sir %>% 
+  group_by(chapter) %>%
+  mutate(low_ci = binom.test(x = n, n = all_words, ci.method = "Clopper-Pearson")$conf.int[1],
+         up_ci = binom.test(x = n, n = all_words, ci.method = "Clopper-Pearson")$conf.int[2]) %>%
+  mutate(len = up_ci - low_ci)-> sir_bin
+
+as_tibble(sir_bin) %>%
+  filter (len == max(sir_bin$len))%>%
+  select(chapter, len)
+```
+
+### 1.4
+Посчитайте байесовский биномиальный доверительный интервал употребления слова “сэр” в каждой главе и выведите главу с максимальным из интервалов в формате тиббл.
+
+```{r}
+mu <- mean(chapter_sir$average)
+var <- var(chapter_sir$average)
+alpha0 <- ((1 - mu) / var - 1 / mu) * mu ^ 2
+beta0 <- alpha0 * (1 / mu - 1)
+
+x <- seq(0, 0.1, length = 1000)
+estimation <- data_frame(
+  x = x,
+  density = c(dbeta(x, shape1 = alpha0, shape2 = beta0)))
+
+chapter_sir %>% 
+  mutate(alpha_post = n+alpha0,
+         beta_post = all_words-n+beta0,
+         average_post = alpha_post/(alpha_post+beta_post),
+         cred_int_l = qbeta(.025, alpha_post, beta_post),
+         cred_int_h = qbeta(.975, alpha_post, beta_post),
+         length = cred_int_h - cred_int_l) -> posterior
+
+as_tibble(posterior) %>%
+  filter (length == max(posterior$length))%>%
+  select(chapter, length)
+
+```
+
+### 1.5
+Посчитайте биномиальный доверительный интервал употребления слова “сэр” в каждой главе и выведите главу с минимальным из интервалов в формате тиббл.
+
+```{r}
+as_tibble(sir_bin) %>%
+  filter (len == min(sir_bin$len))%>%
+  select(chapter, len)
+```
+
+### 1.6
+Посчитайте байесовский биномиальный доверительный интервал употребления слова “сэр” в каждой главе и выведите главу с минимальным из интервалов в формате тиббл.
+
+```{r}
+as_tibble(posterior) %>%
+  filter (length == min(posterior$length))%>%
+  select(chapter, length)
+```
+
+### 1.7
+Напишите короткий текст, комментирующий наблюдаемые сходства/различия между оценками среднего и доверительных интервалов количества употреблений слова “сэр” во всех главах романа. Что можно сказать про разные главы? Что можно сказать о сходстве/различиях фриквентистсткой и байесовской оценок наблюдаемых параметров?
+
+>Разница обычного среднего и стреднего по бутстрапу отличается всего лишь в тысячные доли, что говорит о сбалансированнности выборки. Размеры глав и встречаемость слова "сэр" сильно отличается.
+Фриквентистсткие и байесовские оценки параметров похожи.

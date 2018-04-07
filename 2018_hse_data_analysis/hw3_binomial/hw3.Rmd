@@ -1,0 +1,101 @@
+---
+title: "hw_2"
+author: "Ekaterina Uetova"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(mosaic)
+library(ggplot2)
+```
+
+### 1.1
+Приведите результаты биномиального теста.
+
+```{r}
+df <- read_csv("https://raw.githubusercontent.com/euetova/2018_data_analysis_for_linguists/master/hw3_binomial/hw3_binomial.csv")
+binomial_test <- binom.test(x = df$k, n = df$n, p = df$prior)
+binomial_test
+```
+
+### 1.2
+Приведите результаты симуляции, используя set.seed(42).
+
+```{r}
+set.seed(42)
+do(1000)*
+  sum(sample(x = 1:0, 
+             size = df$n, 
+             prob = c(df$prior, 1 - df$prior), 
+             replace = TRUE)) ->
+  simulations
+
+simulations %>% 
+  mutate(greater = sum >= df$k) %>% 
+  count(greater)
+
+simulations %>% 
+  ggplot(aes(sum))+
+  geom_density(fill = "lightblue")+
+  geom_vline(xintercept = df$k, linetype = 2)+
+  theme_bw()+
+  labs(title = "Распределение 1000 симуляций с параметрами n = 126, p = 0.424")
+```
+
+### 1.3
+Приведите среднее апостериорного распределения, используя prior как средние априорного распределения, а n как количество элементов для вычисления апостериорного распределения.
+
+```{r}
+alpha_prior <- df$prior * df$n
+beta_prior <- (1-df$prior) * df$n
+
+alpha_post <- alpha_prior + df$k
+beta_post <- beta_prior + (df$n - df$k)
+
+alpha_post/(alpha_post+beta_post)
+```
+
+```{r}
+x <- seq(0, 1, length = 100)
+data_frame(p = rep(x, 3),
+           density = c(dbeta(x, alpha_prior, beta_prior),
+                       dbeta(x, df$k, df$n-df$k),
+                       dbeta(x, alpha_post, beta_post)),
+           type = rep(c("prior", "likelihood", "posterior"), each = 100))%>% 
+  ggplot(aes(x = p, y = density, color = type))+
+  geom_line()+
+  theme_bw()
+```
+
+### 1.4
+Приведите среднее апостериорного распределения, используя неинформативное априорное распределение с  α=1 и β=1.
+
+```{r}
+alpha_post2 <- 1 + df$k
+beta_post2 <- 1 + (df$n - df$k)
+
+alpha_post2/(alpha_post2 + beta_post2)
+```
+```{r}
+x <- seq(0, 1, length = 100)
+data_frame(p = rep(x, 3),
+           density = c(dbeta(x, 1, 1),
+                       dbeta(x, df$k, df$n-df$k),
+                       dbeta(x, df$k+1, df$n-df$k+1)),
+           type = rep(c("prior", "likelihood", "posterior"), each = 100))%>% 
+  ggplot(aes(x = p, y = density, color = type))+
+  geom_line()+
+  theme_bw()
+```
+
+### 1.5
+Представим, что Вы пишите статью, напишите короткий абзац, который бы обобщал результаты, полученные в предыдущих заданиях. Не забывайте приводить результаты статистических тестов.
+
+> Так как априорная вероятность (0.424) не лежит в доверительном интервале (0.251897; 0.4228075) и p_value < 0.05, мы отвергаем нулевую гипотезу. Мы также вывели апостериорные распределения, в одном из которых мы знаем априорное распределение, а в другом мы заменяем его на 1. Среднее первого составляет 0.378, среднее второго - 0.335.

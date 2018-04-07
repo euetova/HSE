@@ -1,0 +1,94 @@
+---
+title: "hw5"
+author: "Ekaterina Uetova"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = FALSE)
+```
+```{r}
+library(tidyverse)
+library(GGally)
+library(ca)
+```
+
+### 1.1
+Скачайте датасет `chairs`, в котором собраны разные описания экземпляров из немецких он-лайн каталогов, отнесенным к категориям *Stuhl* 'стул' or *Sessel* 'кресло'. В датасете 19 переменных:
+
+* `Shop` a factor that describes the online store with levels ikea.de, Moebel-Profi.de and roller.de.
+* `WordDE` a factor that describes the specific lexical category.
+* `Category` a factor that describes the more general lexical category (usually the last element of a composite noun), with levels Sessel and Stuhl.
+* `Function` a factor with levels Eat, NotSpec, Outdoor, Relax and Work.
+* `Age` a factor with levels Adult and Children.
+* `Back` a factor with levels Adjust, High, Low and Mid.
+* `Soft` a factor with levels No, Pad and Yes.
+* `Arms` a factor with levels No and Yes.
+* `Upholst` a factor with levels No and Yes.
+* `MaterialSeat` a factor with levels Fabric, Leather, Loom_natur, Metal, Paper, Plastic, Polyamide, Rattan, Steel and Wood.
+* `SeatHeight` a factor with levels Adjust, High and Norm.
+* `SeatDepth` a factor with levels Adjust, Deep and Norm.
+* `Swivel` a factor with levels No and Yes
+* `Roll` a factor with levels No and Yes.
+* `Rock` a factor with levels No and Rock.
+* `AddFunctions` a factor with levels Bed, No and Table.
+* `Recline` a factor with levels No and Yes.
+* `ReclineBack` a factor with levels No and Yes.
+* `SaveSpace` a factor with levels collapse, No and stack.
+
+Используйте все переменные кроме переменных `Shop`, `WordDE` и `Category`, чтобы построить MCA. Нарисуйте все наблюдения, раскрасьте их по переменной `Category` и добавьте доверительные эллипсы. Сверху нанесите переменные из получившейся модели MCA. Получившийся график `ggplot` запустите в консоль.
+
+```{r}
+df <- read.csv('https://raw.githubusercontent.com/euetova/2018_hse_data_analysis/master/hw5_CA_MCA/hw5_chairs.csv')
+
+MCA <- MASS::mca(df[, 4:19])
+
+df <- cbind(df, MCA$rs)
+variables <- as_data_frame(MCA$cs)
+variables$var_names <- rownames(MCA$cs)
+df %>% 
+  ggplot(aes(`1`, `2`))+
+  geom_point(aes(color = Category))+
+  stat_ellipse(aes(color = Category))+
+  geom_text(data = variables, aes(`1`, `2`, label = var_names), size=3)+
+  theme_bw()+
+  scale_x_continuous(limits = c(-0.015, 0.02))
+```
+
+### 1.2
+Проанализируйте полученные результаты. Что Вы можете сказать на основе полученных результатов про категории `Stuhl` и `Sessel` в немецком? Что Вы можете сказать про переменные?
+
+> Stuhl и Sessel довольно хорошо разделяются. У Stuhl гораздо больше разброс во внешнем виде и в применении, чем у Sessel (Sessel в основном сделан из ткани и кожи и предназначен для отдыха/сна).
+
+### 2.1
+
+Cкачайте данные, содержащие 11 базовых цветов в разных подкорпусах  Corpus of Contemporary American English (Davies 2008 - ). Учитывались только адъективные употребления. Постройте CA и нарисуйте биплот с переменными из столбцов и строчек (без стрелочек). Получившийся график `ggplot` запустите в консоль.
+
+```{r}
+df2 <- read.csv('https://raw.githubusercontent.com/euetova/2018_hse_data_analysis/master/hw5_CA_MCA/hw5_colreg.csv')
+
+rownames(df2) <- df2$colors
+ca <- ca(df2[,-5])
+
+color_col <- data.frame(ca$colcoord)
+color_col$rows <- rownames(ca$colcoord)
+
+color_row <- data.frame(ca$rowcoord)
+color_row$rows <- rownames(ca$rowcoord)
+
+color_col %>% 
+  ggplot(aes(Dim1, Dim2, label = rows))+
+  geom_text(color = "blue")+
+  geom_text(data = color_row, color = "red")+
+  theme_bw()+
+  labs(x = "Dim1 (42.1%)",
+       y = "Dim2 (32.6%)")
+
+```
+
+### 2.2
+Проинтерпретируйте полученные результаты.
+
+> Для academic характерен только цвет white. В spoken очень часто употребляется цвет black, режеwhite. green, red и orange свойственны для press. Больше всего цветов в fiction - blue, yellow, purple, brown, pink и gray (4, видимо, редкое название цвета, которое иногда встречается в fiction).
