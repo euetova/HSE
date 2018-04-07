@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат опроса</title>
+</head>
+<body>
+<h1> Спасибо за ответ!</h1>
+<br><br>
+<h4> Результаты голосования: </h4>
+<ul>
+	<li>Кошки: {{ likes['cats'] }} </li>
+	<li>Собаки: {{ likes['dogs'] }}</li>
+</ul>
+<br>
+<h4> Проголосовали: </h4>
+<ul>
+	{% for u in users %}
+	<li>{{u}}: {{users[u]}}</li>
+	{% endfor %}
+</ul>
+</body>
+</html>

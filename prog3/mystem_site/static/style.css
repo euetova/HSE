@@ -1,0 +1,54 @@
+div.container {
+	padding-top: 20px;
+    width: 70%;
+	background-color: #fff;
+}
+.row{
+	padding-top: 20px;
+}
+
+h1 {
+	font-weight: lighter;
+}
+
+a {
+	color: #0066ff;
+}
+
+#sub { list-style:none; }
+#sub li:before {
+    content: "\2192 \0020";
+}
+
+li {
+    margin: 10px 0;
+	font-family: Calibri;
+	font-size: 18px;
+}
+
+p{
+	font-family: Calibri;
+	font-size: 20px;
+}
+
+img {
+	max-width: 400px;
+}
+
+.btn.btn-primary {
+  background-color: $purple;
+  border-color: $purple;
+  outline: none;
+  &:hover {
+    background-color: darken($purple, 10%);
+    border-color: darken($purple, 10%);
+  }
+  &:active, &:focus {
+    background-color: lighten($purple, 5%);
+    border-color: lighten($purple, 5%);
+  }
+}
+
+.file {
+  visibility: hidden;
+}

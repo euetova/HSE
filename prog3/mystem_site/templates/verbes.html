@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Глаголы</title>
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart'], 'language': 'ru'});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Характеристика глагола');
+        data.addColumn('number', 'Количество');
+        data.addRows([
+            ['несовершенные', {{dict_v['несовершенные']}}],
+			['совершенные', {{dict_v['совершенные']}}],
+        ]);
+
+        var options = {'title':'Совершенность',
+                       'width':600,
+                       'height':300,
+                        'legend': { position: "none" }};
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+		
+		var data2 = new google.visualization.DataTable();
+        data2.addColumn('string', 'Характеристика глагола');
+        data2.addColumn('number', 'Количество');
+        data2.addRows([
+            ['непереходные', {{dict_v['непереходные']}}],
+			['переходные', {{dict_v['переходные']}}],
+        ]);
+
+        var options2 = {'title':'Переходность',
+                       'width':600,
+                       'height':300,
+                        'legend': { position: "none" }};
+
+        var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
+        chart2.draw(data2, options2);
+      }
+    </script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	 
+	<link href="static/style.css" rel="stylesheet">
+	
+</head>
+<body>
+<div class="container">
+	<a href='/'>На главную страницу</a>
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Получить информацию о глаголах в тексте</h1>
+			<form class="form-group" method='post'>
+				<h3>Ваш текст:</h3>
+				<textarea rows="5" cols="80" name="text">{{ input }}</textarea>
+				<br>
+				<button type="submit" class="btn btn-primary">Разобрать</button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			{% if dict_v %}
+			<ul>
+				<li><h4> всего глаголов: {{ dict_w['глаголы']}}<h4></li>
+				<li><h4>доля глаголов: {{dict_w['част']}}</h4></li>
+				{% for v, num in dict_v.items() %}
+				<li><h4> {{v}} глаголы: {{ num }}<h4></li>
+				{% endfor %}
+			</ul>
+			{% endif %}	
+			{% if lemmas %}
+			<h3> Леммы: </h3>
+			<ul>
+				{% for verb, freq in lemmas.items() %}
+				<li>{{ verb }} - {{ freq }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</div>
+		<div class="col-md-6">
+			<div id="chart_div"></div>
+			<div id="chart_div2"></div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Текст с картинки</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	 
+	<link href="static/style.css" rel="stylesheet">
+
+	<script>
+$(document).on('click', '.browse', function(){
+  var file = $(this).parent().parent().parent().find('.file');
+  file.trigger('click');
+});
+$(document).on('change', '.file', function(){
+  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+});
+</script>
+
+</head>
+<body>	
+	<div class="container">
+	<a href='/'>На главную страницу</a>
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Получить текст с картинки</h1>
+			<form class="form-inline" method='post'>
+				<input type="file" class="file" accept="image/*" style="visibility: hidden;" class="hidden">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button class="browse btn btn-primary" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+					</span>
+					<input type="text" class="form-control" name="img" placeholder="Choose Image...">
+				</div>
+				<select class="form-control" name="option">
+					<option selected>the text is...</option>
+					<option value="printed">printed</option>
+					<option value="written">written</option>
+				</select>
+				<button class="btn btn-primary" type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+		{% if text %}
+		<div class="row">
+			<div class="col-md-4">
+				<img src='{{ url }}'>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-6">
+				{% for line in text %}
+				<p style="font-size: 28px;"> {{ line }} </p>
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</body>
+</html>

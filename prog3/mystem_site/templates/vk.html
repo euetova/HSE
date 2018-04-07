@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>vk api</title>
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart'], 'language': 'ru'});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Группа');
+        data.addColumn('number', 'Количество');
+        data.addRows([
+            {% for gr, num in d.items() %}
+              ['{{ gr }}', {{ num }}],
+          {% endfor %}
+        ]);
+
+        var options = {'title':'Подписчики',
+                       'width':600,
+                       'height':300,
+                        'legend': { position: "none" }};
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+	  </script>
+	  
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	 
+	<link href="static/style.css" rel="stylesheet">
+	
+</head>
+<body>
+
+<div class="container">
+	<a href='/'>На главную страницу</a>
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Получить информацию о подписчиках групп ВК</h1>
+			<form class="form-inline" method='post'>
+				<input type="text" name="group1" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="id первой группы">
+				<input type="text" name="group2" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="id второй группы">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		{% if dict_vk %}
+		<div class="col-md-6">
+			{% if dict_vk['closed'] %}
+			<h4>Закрытая группа :( </h4>
+			{% else %}
+			<h4>Подписчики группы <font color="red">{{ group1 }}</font>:</h4>
+			<p>{{dict_vk[group1]}}</p>
+			<h4>Подписчики группы <font color="red">{{ group2 }}</font>:</h4>
+			<p>{{dict_vk[group2]}}</p>
+			<h4>Подписчики обеих групп:</h4>
+			<p>{{dict_vk['intersection']}}</p>
+			{% endif %}
+		</div>
+		<div class="col-md-6">
+			<div id="chart_div"></div>
+		</div>
+		{% endif %}
+	</div>
+</div>
+</body>
+</html>
