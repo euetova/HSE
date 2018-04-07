@@ -1,0 +1,14 @@
+### spain.foma ###
+
+read lexc spain.lexc
+define Lexicon;
+
+# E replacement: e changes to i in root if affix begins with -e or -o
+define Accent e -> i || _ ? i r "^" [e | o] ;
+
+# Cleanup: remove morpheme boundaries and infinitive affix
+define Cleanup i r "^" -> 0;
+
+define Grammar Lexicon .o. Accent .o. Cleanup;
+
+regex Grammar;
