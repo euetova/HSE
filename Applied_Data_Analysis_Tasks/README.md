@@ -1,4 +1,4 @@
-###Полезные ссылки
+### Полезные ссылки
 
 + [Задания из курса Лауры Каллмайер](https://user.phil.hhu.de/~kallmeyer/MachineLearning/index.html)
 + [Туториал по CRF Suite](http://sklearn-crfsuite.readthedocs.io/en/latest/tutorial.html)
@@ -10,7 +10,7 @@
 + [Stanford NLP with DL](http://web.stanford.edu/class/cs224n/)
 
 
-####Чтение
+#### Чтение
 
 + [Leskovec et al., глава 5 книги и слайды.](http://www.mmds.org/)
 + [Zaki & Meira, стр. 104-116 (Web centralities)](http://www.dataminingbook.info/pmwiki.php/Main/BookPathUploads?action=downloadman&upname=book-20160121.pdf)
