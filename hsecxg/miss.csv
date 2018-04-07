@@ -1,0 +1,442 @@
+	Gov_Constr	miss	Fusion_Transfer	level	constr	gender	language	case_orig	case_corr
+0	Gov	miss	-	C1	Verb	ж	FL	D	D
+1	Gov	miss	Transfer	B1	Verb	ж	FL	N	D
+2	Constr	miss	-	B2	place	ж	FL	N	L
+3	Gov	miss	-	A2	Verb	ж	FL	N	I
+4	Gov	not miss	-	A1	Noun	ж	FL	L	L
+5	Constr	not miss	-	A2	time	ж	FL	L	A
+6	Constr	not miss	-	A2	time	ж	FL	L	A
+7	Gov	miss	-	A2	Noun	ж	FL	A	L
+8	Constr	miss	-	A2	time	ж	FL	L	L
+9	Constr	not miss	-	A2	time	ж	FL	L	A
+10	Constr	not miss	-	A2	time	м	FL	L	A
+11	Gov	miss	Transfer	B1	Noun	ж	FL	G	G
+12	Gov	miss	-	A2	Noun	ж	FL	L	L
+13	Gov	miss	-	A2	Noun	ж	FL	L	L
+14	Gov	not miss	-	A2	Verb	м	FL	I	A anim
+15	Gov	miss	Transfer	A2	Verb	м	FL	N	L
+16	Gov	miss	Transfer	A2	Verb	м	FL	N	L
+17	Gov	miss	Transfer	A2	Verb	м	FL	N	L
+18	Gov	not miss	-	A2	Noun	ж	FL	D	I
+19	Gov	not miss	Transfer	B2	Adj	ж	FL	G	I
+20	Gov	not miss	Transfer	B2	Noun	ж	FL	I	A
+21	Gov	not miss	Fusion	B1	Verb	м	FL	A	L
+22	Gov	not miss	-	A2	Verb	ж	FL	I	I
+23	Gov	not miss	-	A2	Verb	ж	FL	G	I
+24	Gov	not miss	-	A1	Verb	ж	FL	I	A
+25	Constr	miss	Transfer	B1	time	ж	FL	A	A
+26	Constr	not miss	-	B1	place	ж	FL	L	L
+27	Constr	not miss	Transfer	A2	purpose	ж	FL	V	Conj V
+28	Gov	not miss	-	A1	Verb	м	FL	Adv	Adv
+29	Gov	miss	-	A1	Verb	м	FL	A	A
+30	Gov	miss	Fusion	A2	Verb	м	FL	A anim	I
+31	Gov	miss	-	A1	Noun	ж	FL	L	L
+32	Gov	miss	-	A2	Verb	ж	FL	L	L
+33	Gov	not miss	Fusion	B1	Noun	ж	FL	L	G
+34	Constr	miss	-	B1	time	ж	FL	L	L
+35	Constr	not miss	Transfer	A2	purpose	м	FL	V	Conj V
+36	Gov	not miss	Fusion	A2	Verb	ж	FL	D	D
+37	Gov	not miss	-	A2	Verb	ж	FL	G	A
+38	Gov	miss	-	B1	Verb	ж	FL	A	L
+39	Gov	miss	-	A2	Verb	ж	FL	L	L
+40	Constr	miss	Transfer	A1	time	ж	FL	N	A
+41	Constr	not miss	Transfer	A1	time	м	FL	Adv	Adv
+42	Gov	miss	-	B2	Verb	м	FL	G	G
+43	Gov	not miss	-	B2	Noun	ж	FL	L	G
+44	Gov	miss	-	B2	Verb	ж	FL	L	L
+45	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+46	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+47	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+48	Gov	not miss	-	A2	Verb	ж	FL	Adv	Adv
+49	Gov	not miss	-	A2	Verb	ж	FL	G	I
+50	Gov	miss	-	A2	Noun	ж	FL	D	D
+51	Gov	miss	-	A2	Noun	ж	FL	D	D
+52	Gov	miss	-	A2	Noun	ж	FL	A	D
+53	Gov	miss	-	A2	Verb	ж	FL	D	L
+54	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+55	Gov	not miss	-	A2	time	ж	FL	Adv	Adv
+56	Gov	miss	-	A2	time	ж	FL	A	L
+57	Constr	miss	-	A2	time	ж	FL	L	L
+58	Constr	miss	-	A1	time	ж	FL	N	A
+59	Constr	miss	-	A1	time	ж	FL	N	A
+60	Constr	miss	-	A1	time	ж	FL	N	A
+61	Constr	miss	-	A1	time	ж	FL	N	A
+62	Constr	miss	-	A1	time	ж	FL	N	A
+63	Constr	miss	-	A1	time	ж	FL	N	A
+64	Constr	miss	-	A1	time	ж	FL	N	A
+65	Constr	miss	-	A1	time	ж	FL	N	A
+66	Constr	miss	-	A1	time	м	FL	N	A
+67	Constr	miss	-	A1	time	м	FL	N	A
+68	Constr	miss	-	A1	time	м	FL	A	A
+69	Gov	not miss	-	A1	time	м	FL	ADV	Adv
+70	Constr	miss	-	A1	time	ж	FL	N	A
+71	Constr	miss	-	A1	time	ж	FL	A	A
+72	Constr	miss	-	A1	time	ж	FL	N	A
+73	Constr	miss	-	A1	time	ж	FL	N	A
+74	Constr	miss	-	A1	time	ж	FL	N	A
+75	Constr	miss	-	A1	time	ж	FL	N	A
+76	Constr	miss	-	A1	time	ж	FL	N	A
+77	Constr	miss	-	A1	time	ж	FL	N	A
+78	Constr	miss	-	A1	time	ж	FL	N	A
+79	Constr	not miss	-	A1	place	ж	FL	L	Adv
+80	Constr	not miss	-	A1	place	м	FL	L	Adv
+81	Constr	not miss	Transfer	A1	time	м	FL	Adv	Adv
+82	Constr	not miss	-	A1	time	м	FL	Adv	Adv
+83	Constr	miss	-	A1	time	ж	FL	N	A
+84	Constr	miss	-	A1	time	ж	FL	N	A
+85	Constr	miss	-	A1	time	ж	FL	N	A
+86	Constr	miss	-	A1	time	ж	FL	N	A
+87	Constr	miss	-	A1	time	ж	FL	A	A
+88	Constr	not miss	-	A1	time	ж	FL	Adv	Adv
+89	Constr	not miss	-	A1	time	ж	FL	Adv	Adv
+90	Constr	miss	-	A1	time	м	FL	N	A
+91	Constr	miss	-	A1	time	м	FL	N	A
+92	Constr	miss	-	A1	time	м	FL	N	A
+93	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+94	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+95	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+96	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+97	Constr	not miss	-	A2	time	ж	FL	Adv	Adv
+98	Constr	not miss	-	A2	place	ж	FL	L	L
+99	Constr	miss	-	A2	time	ж	FL	A	A
+100	Gov	not miss	-	A2	Verb	м	FL	L	D
+101	Gov	miss	-	B1	Verb	ж	FL	A	A
+102	Gov	not miss	-	A1	Verb	м	FL	L	L
+103	Gov	not miss	Transfer	A2	Noun	м	FL	G	G
+104	Constr	not miss	-	A2	time	ж	FL	L	L
+105	Constr	not miss	Fusion	A2	place	ж	FL	A	A
+106	Gov	miss	-	A2	time	ж	FL	A	A
+107	Constr	miss	Transfer	A2	time	ж	FL	A	A
+108	Constr	not miss	-	A2	place	ж	FL	A	A
+109	Gov	miss	Transfer	A2	Verb	ж	FL	A	L
+110	Gov	miss	-	B1	Verb	ж	FL	A	A
+111	Constr	not miss	Fusion	A2	time	ж	FL	L	L
+112	Constr	not miss	Transfer	A2	time	ж	FL	Adv	Adv
+113	Constr	not miss	Transfer	A2	time	ж	FL	Adv	Adv
+114	Constr	not miss	Transfer	A2	time	ж	FL	Adv	Adv
+115	Gov	not miss	Transfer	A2	Verb	ж	FL	L	G
+116	Gov	not miss	-	A2	Verb	ж	FL	L	G
+117	Constr	miss	-	A2	Noun	ж	FL	G	G
+118	Constr	not miss	Fusion	A2	place	ж	FL	L	L
+119	Gov	not miss	Fusion	A2	Verb	ж	FL	A	A
+120	Gov	not miss	-	A1	Verb	ж	FL	D	D
+121	Gov	miss	-	A1	Verb	ж	FL	A	A
+122	Gov	miss	Transfer	A1	Verb	ж	FL	N	A anim
+123	Gov	not miss	-	A1	Verb	ж	FL	N	D
+124	Gov	not miss	-	A1	Verb	ж	FL	A	A
+125	Gov	not miss	-	A1	Verb	ж	FL	G	G
+126	Gov	not miss	Transfer	A1	Verb	ж	FL	I	I
+127	Gov	not miss	-	A1	Verb	ж	FL	A	A
+128	Gov	not miss	Transfer	A1	Verb	ж	FL	I	I
+129	Gov	not miss	-	A1	Verb	ж	FL	G	G
+130	Gov	not miss	Transfer	A1	Verb	ж	FL	G	I
+131	Gov	miss	Fusion	B1	Verb	ж	FL	A anim	I
+132	Gov	not miss	-	A1	Verb	ж	FL	N	L
+133	Gov	not miss	-	A1	Verb	ж	FL	L	L
+134	Gov	miss	Transfer	A2	Verb	м	FL	Adv	Adv
+135	Gov	not miss	Fusion	A1	Verb	ж	FL	D	A
+136	Gov	miss	-	A1	Noun	м	FL	N	L
+137	Gov	not miss	-	A1	Verb	м	FL	A	A
+138	Gov	miss	-	A1	Noun	ж	FL	N	L
+139	Gov	not miss	-	A1	Verb	ж	FL	L	L
+140	Gov	miss	-	A1	Noun	ж	FL	L	L
+141	Gov	miss	-	A1	Noun	ж	FL	G	A anim
+142	Gov	miss	-	A1	Verb	ж	FL	A anim	I
+143	Gov	miss	-	A1	Verb	ж	FL	N	I
+144	Gov	miss	-	A1	Verb	ж	FL	N	I
+145	Gov	miss	-	A1	Verb	ж	FL	A anim	I
+146	Constr	not miss	-	A1	time	м	FL	L	A
+147	Gov	miss	-	A1	Verb	ж	FL	A	D
+148	Gov	miss	-	A1	Verb	ж	FL	N	G
+149	Gov	miss	-	A1	Verb	ж	FL	N	G
+150	Gov	not miss	-	A1	Verb	м	FL	L	A
+151	Constr	not miss	-	A1	place	м	FL	L	L
+152	Gov	not miss	Transfer	A1	Verb	ж	FL	I	I
+153	Constr	not miss	Transfer	A1	time	ж	FL	G	A
+154	Gov	not miss	-	A1	Verb	м	FL	L	A
+155	Gov	not miss	-	A1	Verb	ж	FL	G	I
+156	Gov	not miss	-	A1	Verb	м	FL	A	Adv
+157	Gov	not miss	-	A1	Verb	ж	FL	A	G
+158	Gov	miss	Transfer	A2	Noun	ж	FL	G	L
+159	Constr	miss	-	A2	time	ж	FL	N	L
+160	Gov	not miss	-	A2	Noun	ж	FL	L	D
+161	Gov	miss	-	A2	Verb	ж	FL	N	L
+162	Gov	not miss	-	A2	Noun	ж	FL	N	D
+163	Gov	miss	-	A2	Noun	ж	FL	N	L
+164	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+165	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+166	Gov	not miss	-	A2	Noun	ж	FL	D	D
+167	Gov	not miss	-	A2	Noun	ж	FL	N	D
+168	Gov	miss	-	A2	Noun	ж	FL	N	L
+169	Constr	not miss	-	A2	time	ж	FL	L	L
+170	Constr	not miss	-	A2	time	ж	FL	L	L
+171	Constr	not miss	-	A2	time	ж	FL	L	L
+172	Constr	not miss	-	A2	time	ж	FL	L	L
+173	Constr	miss	-	A2	time	ж	FL	L	L
+174	Constr	not miss	-	A2	time	м	FL	L	L
+175	Constr	not miss	-	A2	place	ж	FL	L	L
+176	Constr	not miss	-	A2	place	ж	FL	L	L
+177	Constr	miss	-	A2	time	м	FL	N	L
+178	Gov	miss	Transfer	A2	Verb	ж	FL	N	I
+179	Gov	miss	-	A2	Verb	ж	FL	I	I
+180	Gov	miss	-	A2	Verb	м	FL	N	D
+181	Gov	miss	-	A2	Noun	м	FL	G	G
+182	Gov	miss	-	A2	Verb	м	FL	D	D
+183	Gov	miss	-	A2	Verb	м	FL	G	G
+184	Gov	miss	-	A2	Noun	м	FL	G	G
+185	Gov	miss	-	A2	Noun	м	FL	G	A
+186	Gov	miss	-	A2	Verb	м	FL	N	A
+187	Constr	miss	Transfer	A2	time	ж	FL	N	A
+188	Gov	miss	Transfer	A2	Verb	ж	FL	N	A anim
+189	Gov	miss	-	A2	Verb	ж	FL	N	L
+190	Gov	miss	Transfer	A2	Verb	м	FL	N	L
+191	Gov	miss	-	A2	Noun	ж	FL	N	I
+192	Constr	not miss	-	A2	time	ж	FL	L	A
+193	Gov	miss	Transfer	A2	Noun	ж	FL	G	L
+194	Gov	miss	Transfer	A2	Noun	ж	FL	G	L
+195	Gov	miss	Transfer	A2	Noun	ж	FL	N	L
+196	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+197	Gov	miss	-	A2	Noun	ж	FL	L	L
+198	Gov	miss	-	A2	Noun	ж	FL	G	L
+199	Gov	miss	-	A2	Noun	ж	FL	G	G
+200	Gov	miss	-	A2	Noun	ж	FL	G	D
+201	Gov	not miss	-	A2	Noun	ж	FL	L	D
+202	Gov	not miss	-	A2	Noun	ж	FL	L	D
+203	Gov	not miss	-	A2	Noun	ж	FL	L	D
+204	Gov	miss	-	A2	Noun	ж	FL	L	L
+205	Constr	not miss	Transfer	A2	purpose	ж	FL	V	Conj V
+206	Gov	miss	-	A2	Noun	ж	FL	G	A
+207	Constr	not miss	Transfer	A2	purpose	ж	FL	V	Conj V
+208	Gov	miss	-	A2	Verb	ж	FL	I	I
+209	Gov	miss	-	A2	Noun	м	FL	N	I
+210	Gov	miss	-	A2	Verb	ж	FL	A	L
+211	Gov	not miss	-	A2	Verb	ж	FL	I	L
+212	Gov	not miss	-	A2	Verb	м	FL	G	G
+213	Gov	not miss	Transfer	A2	Verb	м	FL	I	L
+214	Gov	not miss	Fusion	A2	Verb	ж	FL	L	A
+215	Gov	not miss	Fusion	A2	Verb	ж	FL	L	A
+216	Gov	not miss	Fusion	A2	Verb	ж	FL	L	A
+217	Gov	miss	-	A2	Noun	ж	FL	L	L
+218	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+219	Gov	miss	-	A2	Noun	ж	FL	A	L
+220	Gov	not miss	-	A2	Verb	м	FL	L	D
+221	Constr	not miss	Transfer	A2	Verb	м	FL	Adv	Adv
+222	Gov	not miss	-	A2	Verb	ж	FL	A	A
+223	Constr	not miss	Transfer	A2	time	м	FL	L	Adv
+224	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+225	Constr	not miss	-	A2	time	ж	FL	N	G
+226	Constr	not miss	-	A2	time	ж	FL	N	G
+227	Gov	not miss	-	A2	Verb	ж	FL	D	A
+228	Constr	not miss	-	A2	time	ж	FL	N	G
+229	Gov	not miss	-	A2	Noun	ж	FL	N	G
+230	Gov	not miss	-	A2	Verb	ж	FL	N	A anim
+231	Gov	not miss	-	A2	Verb	ж	FL	G	A anim
+232	Gov	not miss	-	A2	Verb	ж	FL	N	A
+233	Gov	not miss	Transfer	A2	Verb	м	FL	G	G
+234	Gov	not miss	Transfer	A2	Verb	ж	FL	G	I
+235	Gov	not miss	-	A2	Noun	ж	FL	N	G
+236	Gov	not miss	-	A2	Noun	ж	FL	G	G
+237	Gov	not miss	-	A2	Verb	ж	FL	G	A
+238	Constr	not miss	Transfer	A2	purpose	ж	FL	V	Conj V
+239	Gov	not miss	-	A2	Noun	ж	FL	N	G
+240	Constr	miss	Transfer	A2	time	ж	FL	A	A
+241	Gov	miss	-	A2	Noun	ж	FL	L	L
+242	Constr	not miss	Transfer	A2	purpose	ж	FL	V	Conj V
+243	Gov	not miss	-	A2	Verb	м	FL	G	A
+244	Constr	not miss	Transfer	A2	purpose	ж	FL	V	Conj V
+245	Gov	not miss	Transfer	A2	Verb	ж	FL	G	D
+246	Gov	not miss	-	A2	Noun	м	FL	N	G
+247	Gov	not miss	-	A2	Noun	ж	FL	N	G
+248	Gov	not miss	-	A2	Verb	ж	FL	A	G
+249	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+250	Gov	not miss	-	A2	Verb	ж	FL	N	G
+251	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+252	Gov	not miss	-	A2	Verb	ж	FL	A	A
+253	Gov	not miss	-	A2	Verb	ж	FL	A	A
+254	Gov	not miss	-	A2	Noun	м	FL	G	A anim
+255	Gov	not miss	-	A2	Verb	ж	FL	L	A
+256	Gov	not miss	-	A2	Noun	ж	FL	G	G
+257	Gov	not miss	-	A2	Verb	ж	FL	L	D
+258	Gov	not miss	-	A2	Verb	ж	FL	A	A
+259	Constr	not miss	-	A2	time	ж	FL	L	L
+260	Gov	not miss	-	A2	Verb	м	FL	D	D
+261	Constr	not miss	-	A2	place	ж	FL	L	L
+262	Gov	not miss	-	A2	Verb	ж	FL	A	A
+263	Gov	not miss	Fusion	A2	Verb	ж	FL	L	L
+264	Constr	not miss	-	A2	place	ж	FL	L	L
+265	Gov	not miss	Fusion	A2	Verb	ж	FL	A	A
+266	Gov	not miss	-	A2	Verb	ж	FL	L	A
+267	Gov	not miss	-	A2	Verb	ж	FL	L	A
+268	Constr	not miss	-	A2	time	ж	FL	N	G
+269	Gov	not miss	-	A2	Verb	ж	FL	A	A
+270	Gov	not miss	-	A2	Noun	ж	FL	L	L
+271	Gov	miss	-	A2	Verb	ж	FL	A	A
+272	Gov	not miss	Fusion	A2	Verb	ж	FL	L	A
+273	Constr	not miss	-	A2	place	м	FL	L	L
+274	Gov	not miss	-	A2	Verb	ж	FL	L	L
+275	Gov	not miss	Fusion	A2	Verb	ж	FL	L	A
+276	Gov	not miss	-	A2	Noun	м	FL	N	A
+277	Gov	not miss	Fusion	A2	Verb	ж	FL	L	A
+278	Gov	not miss	-	A2	Noun	ж	FL	L	D
+279	Gov	not miss	Fusion	A2	Verb	ж	FL	D	A
+280	Gov	not miss	Fusion	A2	Verb	ж	FL	D	A
+281	Gov	not miss	-	A2	Noun	ж	FL	G	G
+282	Gov	not miss	-	A2	Verb	ж	FL	N	A
+283	Constr	not miss	-	A2	time	ж	FL	N	G
+284	Gov	miss	Transfer	A2	Noun	ж	FL	G	L
+285	Constr	not miss	-	A2	purpose	ж	FL	V	V Conj
+286	Gov	miss	Transfer	A2	Noun	ж	FL	G	L
+287	Constr	not miss	-	A2	purpose	ж	FL	V	Conj V
+288	Gov	miss	-	A2	Noun	ж	FL	L	L
+289	Gov	not miss	-	A2	Verb	ж	FL	I	I
+290	Constr	miss	Transfer	A2	time	ж	FL	N	A
+291	Constr	not miss	-	A2	time	ж	FL	A	G
+292	Gov	not miss	-	A2	Verb	м	FL	L	D
+293	Constr	not miss	-	A2	time	ж	FL	A	A
+294	Gov	miss	Transfer	A2	Noun	ж	FL	G	D
+295	Gov	not miss	-	A2	Adj	ж	FL	G	G
+296	Gov	not miss	Transfer	A2	Verb	м	FL	I	L
+297	Gov	miss	-	B1	Verb	ж	FL	A	A
+298	Gov	miss	-	B1	Verb	ж	FL	L	L
+299	Gov	miss	-	B1	Verb	ж	FL	A	I
+300	Gov	miss	Transfer	B1	Verb	ж	FL	A	A
+301	Gov	miss	Transfer	B1	Verb	ж	FL	A	A
+302	Gov	not miss	-	B1	Verb	ж	FL	G	D
+303	Gov	not miss	Transfer	B1	Noun	ж	FL	L	L
+304	Gov	miss	-	B1	Verb	ж	FL	N	A anim
+305	Constr	miss	Transfer	B1	time	ж	FL	N	A
+306	Gov	miss	Transfer	B1	Verb	м	FL	A	L
+307	Gov	not miss	-	B1	Verb	м	FL	I	A
+308	Gov	not miss	-	B1	Verb	ж	FL	L	L
+309	Gov	miss	Transfer	B1	Verb	ж	FL	A	L
+310	Gov	miss	-	B1	Verb	ж	FL	G	L
+311	Constr	not miss	-	B1	place	ж	FL	L	L
+312	Constr	not miss	-	B1	place	ж	FL	L	L
+313	Constr	not miss	-	B1	place	ж	FL	L	L
+314	Gov	not miss	-	B1	Verb	ж	FL	L	L
+315	Constr	not miss	-	B1	time	ж	FL	L	L
+316	Constr	not miss	-	B1	time	м	FL	L	L
+317	Gov	not miss	-	B1	Verb	ж	FL	L	L
+318	Gov	not miss	-	B1	Verb	ж	FL	G	G
+319	Gov	miss	Fusion	B1	Verb	ж	FL	A	L
+320	Gov	miss	-	B1	Verb	м	FL	I	G
+321	Gov	miss	-	B1	Verb	ж	FL	G	G
+322	Constr	not miss	-	B1	Verb	ж	FL	I	G
+323	Gov	not miss	-	B1	Verb	м	FL	G	G
+324	Gov	not miss	-	B1	Verb	ж	FL	G	D
+325	Gov	not miss	-	B1	Noun	ж	FL	G	G
+326	Gov	not miss	Transfer	B1	Verb	ж	FL	I	I
+327	Gov	not miss	-	B1	Verb	ж	FL	I	I
+328	Gov	not miss	Fusion	B1	Verb	ж	FL	L	A
+329	Gov	not miss	-	B1	Verb	м	FL	I	I
+330	Gov	miss	-	B1	Verb	м	FL	N	L
+331	Gov	miss	-	B1	Verb	ж	FL	G	G
+332	Gov	not miss	-	B1	Verb	ж	FL	L	A
+333	Constr	not miss	-	B1	place	м	FL	L	L
+334	Gov	not miss	-	B1	Verb	ж	FL	L	D
+335	Gov	not miss	-	B1	Noun	ж	FL	G	D
+336	Gov	not miss	-	B1	Verb	ж	FL	L	D
+337	Gov	not miss	-	B1	Verb	м	FL	G	G
+338	Gov	not miss	-	B1	Noun	м	FL	L	D
+339	Gov	not miss	Transfer	B1	Noun	ж	FL	G	D
+340	Gov	not miss	-	B1	Verb	ж	FL	L	D
+341	Constr	not miss	Transfer	B1	time	ж	FL	Adv	Adv
+342	Constr	not miss	-	B1	place	ж	FL	L	G
+343	Gov	not miss	Transfer	B1	Verb	ж	FL	D	D
+344	Gov	not miss	-	B1	Noun	м	FL	G	G
+345	Gov	not miss	Transfer	B1	Verb	ж	FL	L	I
+346	Gov	not miss	-	B1	place	ж	FL	A	L
+347	Gov	not miss	-	B1	Verb	ж	FL	I	D
+348	Gov	not miss	-	B1	Adv	ж	FL	L	G
+349	Gov	not miss	-	B1	Verb	ж	FL	L	L
+350	Gov	not miss	-	B1	Verb	ж	FL	L	L
+351	Constr	not miss	-	B1	time	ж	FL	A	A
+352	Gov	miss	Transfer	B1	Noun	ж	FL	G	G
+353	Gov	not miss	-	B1	Verb	ж	FL	A	A
+354	Gov	not miss	-	B1	Verb	ж	FL	A	A
+355	Constr	not miss	-	B1	place	ж	FL	L	L
+356	Gov	not miss	-	B1	Noun	ж	FL	L	L
+357	Gov	not miss	Fusion	B1	Verb	ж	FL	A	L
+358	Gov	not miss	-	B1	Verb	ж	FL	G	I
+359	Gov	not miss	Transfer	B1	Verb	ж	FL	D	G
+360	Gov	not miss	-	B1	Verb	ж	FL	D	I
+361	Constr	not miss	-	B1	Noun	ж	FL	G	D
+362	Gov	not miss	-	B1	Noun	м	FL	L	D
+363	Gov	not miss	-	B1	Verb	ж	FL	A	A
+364	Gov	miss	-	B2	Verb	ж	FL	L	L
+365	Gov	miss	Transfer	B2	Verb	ж	FL	N	I
+366	Gov	miss	Transfer	B2	Verb	ж	FL	N	I
+367	Gov	miss	-	B2	Noun	ж	FL	Adv	I
+368	Gov	not miss	-	B2	Verb	ж	FL	Adv	Adv
+369	Gov	not miss	Transfer	B2	Verb	ж	FL	G	L
+370	Gov	not miss	-	B2	Verb	м	FL	G	I
+371	Gov	not miss	-	B2	Verb	м	FL	I	G
+372	Gov	miss	-	C1	Verb	ж	FL	D	D
+373	Gov	miss	-	C1	Verb	ж	FL	D	A
+374	Gov	miss	-	C1	Verb	ж	FL	D	D
+375	Constr	miss	-	C1	place	ж	FL	L	L
+376	Gov	miss	-	C1	Verb	ж	FL	L	L
+377	Constr	miss	-	C1	place	ж	FL	L	L
+378	Gov	miss	-	C1	Verb	ж	FL	I	G
+379	Gov	miss	-	C1	Verb	ж	FL	D	L
+380	Constr	not miss	-	C1	place	ж	FL	L	L
+381	Gov	not miss	-	C1	Verb	ж	FL	G	N
+382	Gov	miss	-	C1	Verb	ж	FL	L	L
+383	Gov	not miss	-	C1	Verb	ж	FL	L	D
+384	Gov	not miss	-	A1	Verb	ж	FL	A	A
+385	Gov	miss	-	C1	Verb	м	HL	G	L
+386	Gov	miss	-	C1	Noun	м	HL	L	L
+387	Gov	not miss	-	C1	Noun	м	HL	G	G
+388	Gov	miss	Transfer	C1	Noun	м	HL	G	L
+389	Gov	miss	-	C1	Noun	м	HL	G	D
+390	Gov	miss	Transfer	C1	Verb	м	HL	A	L
+391	Gov	not miss	Fusion	C1	Verb	ж	HL	D	D
+392	Gov	not miss	Transfer	C1	Verb	ж	HL	A	D
+393	Gov	miss	-	B1	Verb	ж	HL	G	L
+394	Constr	miss	-	C1	time	м	HL	A	A
+395	Constr	miss	-	C1	time	м	HL	A	A
+396	Constr	miss	-	C1	time	м	HL	A	A
+397	Gov	miss	-	B2	Verb	м	HL	G	G
+398	Constr	not miss	Transfer	C1	Adj	м	HL	N	I Adj
+399	Gov	not miss	-	C1	Adj	м	HL	A	I
+400	Gov	not miss	-	C1	Verb	м	HL	G	I
+401	Gov	not miss	Transfer	C1	Verb	м	HL	G	G
+402	Gov	miss	-	C2	Noun	ж	HL	G	G
+403	Constr	not miss	Fusion	C1	place	ж	HL	L	L
+404	Constr	not miss	Fusion	C1	place	ж	HL	L	L
+405	Gov	miss	-	C1	Verb	м	HL	L	L
+406	Gov	not miss	Fusion	B2	Verb	м	HL	I	L
+407	Gov	not miss	-	B2	Verb	м	HL	D	L
+408	Constr	miss	-	C2	Noun	ж	HL	G	G
+409	Constr	not miss	-	C1	place	ж	HL	L	L
+410	Gov	not miss	-	C1	Verb	ж	HL	G	G
+411	Constr	not miss	-	C1	place	м	HL	L	L
+412	Constr	miss	Transfer	C1	time	ж	HL	N	A
+413	Gov	miss	-	C1	Verb	ж	HL	L	L
+414	Gov	miss	Fusion	C1	Verb	ж	HL	I	L
+415	Gov	miss	-	C1	Verb	ж	HL	N	A
+416	Gov	miss	-	C1	Verb	м	HL	D	L
+417	Gov	miss	Transfer	C1	Verb	ж	HL	N	L
+418	Gov	miss	-	C1	Verb	м	HL	I	I
+419	Gov	miss	-	C1	Verb	ж	HL	L	L
+420	Gov	not miss	-	C1	Verb	м	HL	L	A
+421	Gov	not miss	-	C1	Verb	м	HL	G	A
+422	Gov	not miss	-	C1	Verb	ж	HL	L	D
+423	Constr	not miss	-	C2	time	м	HL	G	G
+424	Constr	not miss	-	C2	time	м	HL	G	G
+425	Gov	not miss	-	C2	Verb	ж	HL	L	L
+426	Gov	not miss	-	C1	Verb	ж	HL	A	A
+427	Constr	not miss	-	C1	place	ж	HL	L	L
+428	Constr	not miss	-	C1	place	ж	HL	L	L
+429	Constr	not miss	-	C2	place	ж	HL	L	L
+430	Constr	not miss	-	C2	cause	ж	HL	G	D
+431	Constr	not miss	-	C1	cause	ж	HL	G	D
+432	Constr	not miss	-	C1	cause	ж	HL	G	D
+433	Gov	not miss	-	C1	Verb	ж	HL	D	D
+434	Gov	not miss	Fusion	C1	Verb	ж	HL	D	D
+435	Gov	not miss	Transfer	C1	Verb	м	HL	G	D
+436	Constr	not miss	-	C1	place	м	HL	L	I
+437	Gov	miss	-	C2	Verb	ж	HL	L	L
+438	Gov	miss	-	C2	Verb	ж	HL	N	G
+439	Constr	miss	-	C2	place	ж	HL	L	L
+440	Gov	miss	-	C2	Noun	ж	HL	G	L
