@@ -1,0 +1,32 @@
+text_id;word_id;word;stard_idx;len;type;orientation;specificity;aspect;head;extent
+14418;1;:);22;2;word;pos;general;;punct;1
+14418;2;захотелось;39;10;word;pos;general;;verb;0.3
+14418;3;прекрасный;57;10;word;pos;general;;adj;1
+14418;4;По достоинству;257;13;collocation;pos;general;;prep;0.7
+14418;5;прелести;322;8;word;pos;general;;noun;0,5
+14418;6;гостеприимство;338;14;word;pos;general;;noun;0.5
+14418;7;:));383;3;word;pos;general;;punct;1
+14418;8;удивительное;445;12;word;pos;general;;adj;0.7
+14418;9;доволен;469;13;collocation;pos;general;;adj;1
+14418;10;ПРЕКРАСНО;577;9;word;pos;general;;adv;1
+14418;11;любит;598;5;word;pos;general;;verb;0.5
+14418;12;!!;615;2;word;ambi;general;;punct;1
+14418;13;желанный гость;662;14;collocation;pos;general;;noun;0.5
+14418;14;));709;2;word;pos;general;;punct;0.9
+14418;15;Замечательное;724;13;word;pos;general;;adj;1
+14418;16;удивлен;792;7;word;ambi;general;;adj;0.8
+14418;17;обширное;811;8;word;ambi;general;;adj;0.5
+14418;18;творить;832;7;word;ambi;general;;verb;0.5
+14418;19;свежесть продуктов;901;18;collocation;pos;specific;кухня|еда;noun;0.7
+14418;20;свежее;957;6;word;pos;specific;еда;noun;0.7
+14418;21;радует;967;6;word;pos;general;;verb;1
+14418;22;Всем бы такую;984;13;collocation;pos;general;;verb;1
+14418;23;!;1081;1;word;ambi;general;;punct;0.5
+14418;24;рад;1114;3;word;pos;general;;verb;0.8
+14418;25;Очень;1134;5;word;ambi;general;;adv;1
+14418;26;Приятно;1140;7;word;pos;general;;adj;1
+14418;27;пожелание;1149;9;word;ambi;general;;noun;0.3
+14418;28;идеальное;1197;9;word;pos;general;;adj;1
+14418;29;БЛАГОДАРНОСТЬ;1356;13;word;pos;general;;noun;1
+14418;30;РЕКОМЕНДУЮ;1446;10;word;pos;general;;verb;1
+14418;31;ОБЯЗАТЕЛЬНО ПОСЕТИТЬ;1478;20;collocation;pos;general;;verb;1

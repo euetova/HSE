@@ -1,0 +1,24 @@
+text_id`	word_id	word	type	orientation	spec/general	aspect	head	certain
+17600	1	не мог успокоиться	colloctation	pos	general	еда	v	0,8
+17600	2	вкусил	word	pos	specific	еда	v	0,8
+17600	3	горячий	word	ambi	specific	еда	n	0,5
+17600	4	тающий	word	pos	specific	еда	n	0,7
+17600	5	массивная порция	collocation	pos	specific	еда	n	0,6
+17600	6	много	word	ambi	specific	еда	n	0,6
+17600	7	я люблю, но	collocation	ambi	specific	еда	v	0,5
+17600	8	на вкус	collocation	ambi	specific	еда	n	0,5
+17600	9	весьма	word	pos	general	еда	adv	0,6
+17600	10	диетично	word	pos	specific	еда	adv	0,7
+17600	11	качественный уровень соблюден	collocation	pos	specific	еда	v	0,7
+17600	12	слишком	word	neg	specific	еда	adj	0,6
+17600	13	плюс,	word	ambi	specific	еда	n	0,5
+17600	14	другие приятности	collocation	pos	general	еда	n	0,6
+17600	15	приятный 	word	pos	specific	еда	n	0,6
+17600	16	приятная	word	pos	specific	еда	n	0,6
+17600	17	Комплиментом	word	pos	specific	ресторан	n	0,6
+17600	18	зажали	word	neg	specific	ресторан	v	0,6
+17600	19	А нельзя было	collocation	neg	specific	интерьер	v	0,6
+17600	20	маловато	word	neg	specific	интерьер	adv	0,6
+17600	21	выбивается из стиля	word	neg	specific	интерьер	v	0,6
+17600	22	сервис с улыбкой	collocation	pos	specific	сервис	n	0,6
+17600	23	приборы забыли принести	collocation	neg	specific	сервис	v	0,5

@@ -1,0 +1,28 @@
+text_id; word_id; word; stard_idx; len; type (word/collocation); orientation (pos/neg/ambu); specifity(gen'spec); aspect;head;extent
+23518;1;уютный;22;;collocation;pos;specific;интерьер;v;0.8
+23518;2;симпатичные;1;;word;pos;general;интерьер;n;0.8
+23518;3;удобные;14;;word;pos;specific;интерьев;n;0.8
+23518;4;приятный;43;;word;pos;general;музыка;n;0.8
+23518;5;принесли немедленно;5;;collocation;pos;specific;обслуживание;v;0.5
+23518;6;даже немного больше, чем необходимо;67;;collocation;pos;general;обслуживание;v;0.5
+23518;7;юное воздушное;13;;collocation;pos;specific;персонал;n;0.8
+23518;8;чрезвычайно милая;103;;collocation;pos;specific;персонал;v;0.8
+23518;9;внимательный;111;;word;pos;specific;персонал;v;0.8
+23518;10;работать прекрасно;16;;collocation;pos;general;персонал;v;0.8
+23518;11;меняться молниеносно;118;;collocation;pos;specific;обслуживание;v;0.5
+23518;12;подавать грамотно;34;;collocation;pos;specific;обслуживание;v;0.8
+23518;13;горячая;96;;word;pos;specific;еда;n;0.8
+23518;14;ароматная;106;;word;pos;specific;еда;n;0.8
+23518;15;превосходно;16;;word;pos;general;еда;n;0.8
+23518;16;яркий;34;;word;pos;general;еда;n;0.8
+23518;17;сочный;47;;word;pos;specific;еда;n;0.8
+23518;18;внушительный;14;;collocation;pos;specific;еда;n;0.8
+23518;19;свежайший;212;;word;pos;specific;еда;n;0.8
+23518;20;сладковатый;245;;word;pos;specific;еда;n;0.8
+23518;21;отлично;171;;word;pos;general;еда;n;0.8
+23518;22;очень нежно;35;;word;pos;general;еда;n;0.8
+23518;23;очень воздушно;49;;word;pos;specific;еда;n;0.8
+23518;24;достойный;52;;word;pos;general;еда;n;0.8
+23518;26;прекрасный;64;;word;pos;general;интерьер;n;0.8
+23518;27;соотношение «соотношение цены-качество» ;35;;collocation;pos;general;ресторан;v;0.8
+23518;28;семейный;85;;word;pos;general;интерьер;n;0.5
