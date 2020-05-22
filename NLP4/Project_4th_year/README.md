@@ -11,10 +11,10 @@
 ## Ход работы
 
 - [x] Разметка текстов
-[1](https://github.com/mbibaeva/nlp_Kartozia/blob/master/Project_4th_year/annotation_Kartozia%20(1).txt),
-[2](https://github.com/mbibaeva/nlp_Kartozia/blob/master/Project_4th_year/annotation_Bibaeva.csv),
-[3](https://github.com/mbibaeva/nlp_Kartozia/blob/master/Project_4th_year/annotation_Uetova_27221%2C%2029097%2C%2023065%2C%2038116.txt),
-[4](https://github.com/mbibaeva/nlp_Kartozia/blob/master/Project_4th_year/14418.txt)
+[1](https://github.com/euetova/HSE/blob/master/NLP4/Project_4th_year/annotations/14418.txt),
+[2](https://github.com/euetova/HSE/blob/master/NLP4/Project_4th_year/annotations/annotation_Bibaeva.csv),
+[3](https://github.com/euetova/HSE/blob/master/NLP4/Project_4th_year/annotations/annotation_Kartozia.txt),
+[4](https://github.com/euetova/HSE/blob/master/NLP4/Project_4th_year/annotations/annotation_Uetova_27221%2C%2029097%2C%2023065%2C%2038116.txt)
 
 - [x] Извлечены тексты плюс оценки по аспектам.
 
